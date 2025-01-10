@@ -649,3 +649,11 @@ docker service update --limit-cpu 2 nginx
 ```
 docker service update --replicas=5 nginx
 ```
+
+## DOCKER stop sort by memory
+
+```
+docker stats --no-stream --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}" | sort -k 4 -h
+```
+
+
