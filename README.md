@@ -1,11 +1,3 @@
-> This repository has been trending on GitHub. I appreciate your support.
-
-Buy the book (Painless Docker):
-- [Amazon (Kindle and paperback)](https://www.amazon.com/Painless-Docker-Unlock-Power-Ecosystem-ebook/dp/B0CP1JCTSY?&linkCode=ll1&tag=eon01-20&linkId=bfbb334282f39854101bd03aa744639a&language=en_US&ref_=as_li_ss_tl)
-- [Leanpub (epub, PDF)](https://leanpub.com/painless-docker)
-
-*Read this in other languages: [English](README.md), [Russian](README.ru.md), [Persian](README.fa.md), [Chinese](README.zh.md)*
-
 # Table of Contents
 
    * [Installation](#installation)
@@ -19,7 +11,7 @@ Buy the book (Painless Docker):
    * [Docker Swarm](#docker-swarm)
    * [Notes](#notes)
    
-# The Ultimate Docker Cheat Sheet
+# Ultimate Docker Cheat Sheet
 
 # Installation
 
@@ -650,7 +642,7 @@ docker service update --limit-cpu 2 nginx
 docker service update --replicas=5 nginx
 ```
 
-## DOCKER stop sort by memory
+## DOCKER stats sort by memory
 
 ```
 docker stats --no-stream --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}" | sort -k 4 -h
