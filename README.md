@@ -10,6 +10,7 @@
    * [Cleaning Docker](#cleaning-docker)
    * [Docker Swarm](#docker-swarm)
    * [Notes](#notes)
+   * [Stats](#docker-stats-sort-by-memory)
    
 # Ultimate Docker Cheat Sheet
 
@@ -642,7 +643,7 @@ docker service update --limit-cpu 2 nginx
 docker service update --replicas=5 nginx
 ```
 
-## DOCKER stats sort by memory
+## Docker stats sort by memory
 
 ```
 docker stats --no-stream --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}" | sort -k 4 -h
